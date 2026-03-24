@@ -1,0 +1,531 @@
+
+header {
+    /* margin-top: 20px; */
+    /* padding-bottom: 10px; */
+    background-color: #027b9a;
+  }
+ 
+  #head{
+    height: 200px;
+    
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #ff0000; */
+      background-image: url('/static/w5.jpeg');
+      background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 23px;
+    font-style: bold;
+     /* margin-top: 10px;  */
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #add8e6;
+  
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  /* padding-top: 14px; */
+  text-decoration: none;
+  /* margin: auto; */
+}
+#navbar a:hover{
+  background-color: #e0e0e0;
+  color: #000000;
+  text-decoration: underline;
+  border-radius: 100px;
+  
+  
+}
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+section { 
+    margin: 20px;  
+    color: rgb(0, 0, 0);   
+    padding: 50px 0;
+    background-color: transparent;
+    /* border: 1px solid #000000; */
+}
+.container { /*a bhag andar na countainer mate chhe*/
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    border: 1px solid rgb(83, 83, 83);
+  } 
+  .container5{
+    color: #000000;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 5px black; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    margin-top: 20px;
+    font-size: larger;
+
+  }
+  #term{
+    border: 1px solid rgb(83, 83, 83);
+  }
+  .parent {
+    border: 1px solid rgb(83, 83, 83);
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  #child1 {
+    display: inline-block;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 1rem 2rem;
+    vertical-align: middle;
+    height: 260px;
+    /* border-width: 10px; */
+    
+  }
+  #child2{
+    display: inline-block;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 2rem 2rem;
+    vertical-align: middle;
+    height: 260px;
+
+  }
+  #child3{
+    display: inline-block;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 2rem 2rem;
+    vertical-align: middle;
+    height: 320px;
+
+  }
+  #child4{
+    display: inline-block;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 2rem 2rem;
+    vertical-align: middle;
+    height: 320px;
+
+  }
+  
+
+/* if you wants to put button in body ,than comment out
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #001f4d;
+} */
+
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid rgb(83, 83, 83); /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #add8e6; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+    
+  } 
+  #myBtn:hover {
+    background-color: #fffff2;
+    color: #00bef0; /* Add a dark-grey background on hover */
+  }
+
+
+ /* .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}  */
+table, th, td {  
+  border: 1px solid rgb(83, 83, 83);  
+    border-collapse: collapse; 
+    width: 100%; 
+}  
+td {  
+    text-align: center;
+    width: 25%;
+    padding: 10px;  
+}
+th{
+    color: #000000;
+    text-align: center;
+    width: 25%;
+    padding: 10px;    
+}
+
+
+
+/* start hear from footer  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One';
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .pg-footer {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .footer {
+      background-color: transparent;
+      color: #000000;
+       /* background-image: url('/static/w3.jpeg');  */
+      
+  }
+  /* .footer-wave-svg {
+      background-color: transparent;
+      display: block;
+      height: 30px;
+      position: relative;
+      top: -1px;
+      width: 100%;
+  }
+   .footer-wave-path {
+      fill: transparent;
+  }  */
+  
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      max-width: 1230px;
+      padding: 40px 15px 450px;
+      position: relative;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .footer-content-column {
+      box-sizing: border-box;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      color: #000000;
+  }
+  
+  .footer-content-column ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .footer-logo-link {
+      display: inline-block;
+  }
+  .footer-menu {
+      margin-top: 30px;
+  }
+  
+  .footer-menu-name {
+      color: #000000;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-menu-list {
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 10px;
+      padding-left: 0;
+  }
+  .footer-menu-list li {
+      margin-top: 5px;
+  }
+  
+  .footer-call-to-action-description {
+      color: #000000;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  .footer-call-to-action-button:hover {
+      background-color: #fffff2;
+      color: #00bef0;
+  }
+  .button:last-of-type {
+      margin-right: 0;
+  }
+  .footer-call-to-action-button {
+      background-color: #027b9a;
+      border-radius: 21px;
+      color: #fffff2;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      padding: 12px 30px;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .2s;
+      cursor: pointer;
+      position: relative;
+  }
+  .footer-call-to-action {
+      margin-top: 30px;
+  }
+  .footer-call-to-action-title {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-call-to-action-link-wrapper {
+      margin-bottom: 0;
+      margin-top: 10px;
+      color: #000000;
+      text-decoration: none;
+  }
+  .footer-call-to-action-link-wrapper a {
+      color: #000000;
+      text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  .footer-social-links {
+      bottom: 0;
+      height: 54px;
+      position: absolute;
+      right: 0;
+      width: 236px;
+  }
+  
+  .footer-social-amoeba-svg {
+      height: 54px;
+      left: 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 236px;
+  }
+  
+  .footer-social-amoeba-path {
+      fill: #000000;
+  }
+  
+  .footer-social-link.linkedin {
+      height: 26px;
+      left: 3px;
+      top: 11px;
+      width: 26px;
+  }
+  
+  .footer-social-link {
+      display: block;
+      padding: 10px;
+      position: absolute;
+  }
+  
+  .hidden-link-text {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px,1px,1px,1px);
+      -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+      clip-path: inset(0px 0px 99.9% 99.9%);
+      overflow: hidden;
+      height: 1px;
+      width: 1px;
+      padding: 0;
+      border: 0;
+      top: 50%;
+  }
+  
+  .footer-social-icon-svg {
+      display: block;
+  }
+  
+  .footer-social-icon-path {
+      fill: #ffffff;
+      transition: fill .2s;
+  }
+  
+  .footer-social-link.twitter {
+      height: 28px;
+      left: 62px;
+      top: 3px;
+      width: 28px;
+  }
+  
+  .footer-social-link.youtube {
+      height: 24px;
+      left: 123px;
+      top: 12px;
+      width: 24px;
+  }
+  
+  .footer-social-link.github {
+      height: 34px;
+      left: 172px;
+      top: 7px;
+      width: 34px;
+  }
+  
+  .footer-copyright {
+      background-color: #000000;
+      color: #fff;
+      padding: 15px 30px;
+    text-align: center;
+  }
+  
+  .footer-copyright-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+  }
+  
+  .footer-copyright-text {
+    color: #fff;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+  }
+  
+  .footer-copyright-link {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Media Query For different screens */
+  @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+  }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  
+  }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 760px) {
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 450px;
+        position: relative;
+    }
+  
+    .footer-wave-svg {
+        height: 50px;
+    }
+  
+    .footer-content-column {
+        width: 24.99%;
+    }
+  }
+  @media (min-width: 568px) {
+    /* .footer-content-column {
+        width: 49.99%;
+    } */
+  }

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<br>
+<div class="container2">
+    <section class="register-form">
+        <h1><u>Registration</u></h1>
+<form action="/register" method="post">
+    <br>
+    
+    <div class="mb-3">
+        <label for="username">Create User Name : </label>
+        <input autocomplete="off" required autofocus class="form-control mx-auto w-auto" id="user_name" name="user_name" placeholder="Username" type="text">
+    </div>
+    <div class="mb-3">
+        <label for="phone">Email :</label>
+        <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required class="form-control mx-auto w-auto" id="phone" name="Email" type="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+        <label for="password">Enter Password :</label>
+        <input required class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <div class="mb-3">
+        <label for="password">Enter re-Password :</label>
+        <input required class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="Confirm Password" type="password">
+    </div>
+    <button onclick="register()" class="btn btn-primary" type="submit">Register</button>
+</form>
+</section>
+</div>
+<br>
+{% endblock %}

@@ -1,0 +1,30 @@
+#card{
+  /* border: 1px solid #ddd; */
+  /* border-radius: 60%;
+  padding: 5px;
+  width: 150px;
+    vertical-align: middle; */
+
+    /* OPTION FOR AKAAR */
+    
+    width: 200px;  
+    height: 200px;
+    border-radius: 50%;
+  
+}
+
+#child5{
+  display: inline-block;
+  /* border: 2px solid rgb(0, 0, 0); */
+  padding: 2rem 2rem;
+  vertical-align: middle;
+  /* height: 200px; */
+}
+.parent3 {
+  border: 1px solid transparent;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+}

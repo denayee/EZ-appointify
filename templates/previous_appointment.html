@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Previous Appointments
+{% endblock %}
+    
+{% block main %}
+<br>
+    <center>
+<h3><u>Previous Appointments</u></h3>
+<br>
+<table class="table">
+
+        <tr>
+            <th>Name</th>
+            <th>office</th>
+            <th>date</th>
+            <th>time</th>
+        </tr>
+
+
+
+ 
+        {% for appointment in appointments %}
+        <tr>
+            {% for i in appointment %}
+             <td>{{ i }}</td>
+            {% endfor %} 
+        </tr>
+        {% endfor %}
+
+
+</table>
+<br>
+<a class="footer-call-to-action-button button"  href="/cancel_user">Cancel Appointment</a>
+
+</center>
+<br>
+<br>
+
+{% endblock %}

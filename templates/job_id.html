@@ -1,0 +1,31 @@
+{% extends "admin_layout.html" %}
+
+{% block title %}
+    job id
+{% endblock %}
+    
+{% block main %}
+<br>
+<center>
+<h3>Jobs and Job Ids</h3>
+<table class="table">
+
+    <tr>
+        <th>Service Name</th>
+        <th>Job id</th>
+
+    </tr>
+
+
+
+    {% for job in job_id %}
+    <tr>
+        {% for i in job %}
+         <td>{{ i }}</td>
+        {% endfor %} 
+    </tr>
+    {% endfor %}
+
+</table>
+</center>
+{% endblock %}

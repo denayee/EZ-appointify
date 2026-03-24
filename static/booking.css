@@ -1,0 +1,109 @@
+
+  .booking-form {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+
+  
+  button {
+    background-color: #027b9a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  button:hover {
+    background-color: #fffff2;
+    color: #00bef0;
+    
+  }
+  option { 
+    background-color: rgb(240, 247, 247);
+    border:active;
+    
+  }
+  #office{
+    width: 83%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+
+  }
+  #Cancle{
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+ #section_time{
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  font-size: 16px;
+ }
+
+ #section_time2{
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  font-size: 16px;
+ }
+ #section_time3{
+  width: 10%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  font-size: 16px;
+ }
+
+  
+/* #confirmation {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: 1px solid #0078d4;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hidden {
+  display: none;
+} */
+
+#date{
+  width: 200px;
+}

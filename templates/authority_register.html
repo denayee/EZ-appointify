@@ -1,0 +1,80 @@
+{% extends "authority_layout.html" %}
+
+{% block title %}
+    Authority Register
+{% endblock %}
+
+{% block main %}
+<br>
+<div class="container2">
+    <section class="register-form">
+<h1><u>Register</u></h1><h5>(Make Account)</h5>
+<form action="/authority_register" method="post">
+    <form id="authority_register">
+        <label for="office">Select a Category :</label>
+        <select id="office" name="office" required>
+            <optgroup label="Car Service Center">
+              <option>Star Auto Service</option>
+              <option>Go mechanic</option>
+              <option>Cars24</option>
+            </optgroup>
+
+            <optgroup label="Legal consultation">
+              <option>Shah Associate-Legal Service</option>
+              <option>Alka Shah Advocate</option>
+              <option>Jagdishwar Mishra</option>
+            </optgroup>
+
+            <optgroup label="Radiology">
+                <option>Om Radiology</option>
+                <option>Oroscan</option>
+                <option>Ravi Sono X-ray clinic</option>
+            </optgroup>
+
+            <optgroup label="Event Manager">
+                <option>Unicorm Events</option>
+                <option>Divine Event</option>
+                <option>Koncept Events</option>
+            </optgroup>
+
+            <optgroup label="Restaurant dining booking">
+                <option>Honest</option>
+                <option>Rangoli</option>
+                <option>Mango</option>
+            </optgroup>
+
+            <optgroup label="Salon">
+                <option>Fine hair art</option>
+                <option>Bobby hair salon</option>
+                <option>Teletop hair style</option>
+            </optgroup>
+
+          </select>
+        <br>
+        <br>
+    <div class="mb-3">
+        <label for="username">Create User Name : </label>
+        <input autocomplete="off" required autofocus class="form-control mx-auto w-auto" id="user_name" name="user_name" placeholder="Username" type="text">
+    </div>
+    <div class="mb-3">
+        <label for="phone">Email :</label>
+        <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="form-control mx-auto w-auto" required id="phone" name="email" type="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+        <label for="password">Enter Password :</label>
+        <input class="form-control mx-auto w-auto" required id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <div class="mb-3">
+        <label for="password">Enter re-Password :</label>
+        <input class="form-control mx-auto w-auto" required id="password" name="confirmation" placeholder="Confirm Password" type="password">
+    </div>
+    <div class="mb-3">
+        <label for="password">Enter ID-Card :</label>
+        <input autocomplete="off" required autofocus class="form-control mx-auto w-auto" id="idCard" name="idCard" placeholder="JOB NO." type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Register</button>
+</form>
+</section>
+</div>
+<br>
+{% endblock %}

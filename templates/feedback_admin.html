@@ -1,0 +1,36 @@
+{% extends "admin_layout.html" %}
+
+{% block title %}
+    Admin Feedbacks
+{% endblock %}
+    
+{% block main %}
+<br>
+<center>
+    <h3><u>User/Owners Feedback</u></h3>
+    <br>
+    <table class="table">
+    
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Feedback</th>
+            </tr>
+    
+    
+    
+     
+            {% for feed in feeds %}
+            <tr>
+                {% for i in feed %}
+                 <td>{{ i }}</td>
+                {% endfor %} 
+            </tr>
+            {% endfor %}
+    
+    
+    </table>
+    
+    </center>
+
+{% endblock %}

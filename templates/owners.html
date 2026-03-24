@@ -1,0 +1,42 @@
+{% extends "admin_layout.html" %}
+
+{% block title %}
+    Admin home
+{% endblock %}
+    
+{% block main %}
+<br>
+<center>
+    <h2>Delete Owner</h2>
+    <div class="user_delete">
+        <form action="/owners" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="user_name" name="user_name" placeholder="Username" type="text">
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Delete</button>
+        </form>
+    </div>
+    
+<!-- <h2>Owners</h2> -->
+<br>
+<table class="table">
+
+    <tr>
+        <th><h1>ID</h1></th>
+        <th><h1>Owners</h1></th>
+    </tr>
+
+    {% for owner in owners %}
+    <tr>
+        {% for i in owner %}
+         <td>{{ i }}</td>
+        {% endfor %} 
+    </tr>
+    {% endfor %}
+
+</table>
+
+</center>
+<br>
+{% endblock %}

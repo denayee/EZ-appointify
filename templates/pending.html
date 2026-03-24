@@ -1,0 +1,34 @@
+{% extends "authority_layout.html" %}
+
+{% block title %}
+    Pending Appointments
+{% endblock %}
+    
+{% block main %}
+<br>
+<center>
+<h3><u>Pending Appointments</u></h3>
+<br>
+<table class="table">
+
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>date</th>
+        <th>time</th>
+    </tr>
+
+
+
+    {% for appointment in pendings %}
+    <tr>
+        {% for i in appointment %}
+         <td>{{ i }}</td>
+        {% endfor %} 
+    </tr>
+    {% endfor %}
+
+</table>
+</center>
+<br>
+{% endblock %}

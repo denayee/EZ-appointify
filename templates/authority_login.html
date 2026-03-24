@@ -1,0 +1,70 @@
+{% extends "authority_layout.html" %}
+
+{% block title %}
+    Log in
+{% endblock %}
+
+{% block main %}
+<br>
+<div class="container3">
+    <section class="login-form">
+<h1><u>User Login</u></h1>
+<br>
+    <form action="/authority_login" method="post">
+        <form id="authority_login">
+            <label for="office">Select a Category :</label>
+            <select id="office" name="office" required>
+                <optgroup label="Car Service Center">
+                    <option>Star Auto Service</option>
+                    <option>Go mechanic</option>
+                    <option>Cars24</option>
+                  </optgroup>
+      
+                  <optgroup label="Legal consultation">
+                    <option>Shah Associate-Legal Service</option>
+                    <option>Alka Shah Advocate</option>
+                    <option>Jagdishwar Mishra</option>
+                  </optgroup>
+      
+                  <optgroup label="Radiology">
+                      <option>Om Radiology</option>
+                      <option>Oroscan</option>
+                      <option>Ravi Sono X-ray clinic</option>
+                  </optgroup>
+      
+                  <optgroup label="Event Manager">
+                      <option>Unicorm Events</option>
+                      <option>Divine Event</option>
+                      <option>Koncept Events</option>
+                  </optgroup>
+      
+                  <optgroup label="Restaurant dining booking">
+                      <option>Honest</option>
+                      <option>Rangoli</option>
+                      <option>Mango</option>
+                  </optgroup>
+      
+                  <optgroup label="Salon">
+                      <option>Fine hair art</option>
+                      <option>Bobby hair salon</option>
+                      <option>Teletop hair style</option>
+                  </optgroup>
+                <!-- Add more office options as needed -->
+            </select>
+            <br>
+            <br>
+            <label for="user_name">Enter User Name :</label>
+        <div class="mb-3">
+            <input autocomplete="off" required autofocus class="form-control mx-auto w-auto" id="user_name" name="user_name" placeholder="Username" type="text">
+        </div>
+        <label for="password">Enter password :</label>
+        <div class="mb-3">
+            <input required class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+</section>
+</div>
+<br>
+{% endblock %}

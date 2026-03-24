@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<br>
+<div class="container3">
+    <section class="login-form">
+<h1><u>User Login</u></h1>
+<br>
+<div class="login">
+    <label for="user_name">Enter User Name :</label>
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" required autofocus class="form-control mx-auto w-auto" id="user_name" name="user_name" placeholder="Username" type="text">
+        </div>
+        <label for="password">Enter password :</label>
+        <div class="mb-3">
+            <input required class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+    <br>
+
+    <h5>No account?</h5> <a class="footer-call-to-action-button button"  href="/register">Register</a>
+   
+</section>
+</div>
+</div>
+<br>
+{% endblock %}

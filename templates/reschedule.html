@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Re-schedule
+{% endblock %}
+
+{% block main %}
+<br>
+<center>
+    <div class='parent'>
+<h3><u>Re-schedule Your appointment</u></h3>
+<br>
+<div id="child1">
+    <form action="/reschedule" method="post">
+        <div id="old_data">
+
+        <label for="office" name="office" >Select a Category :</label>
+        <select id="office" name="office" required>
+            <optgroup label="Car Service Center">
+                <option>Star Auto Service</option>
+                <option>Go mechanic</option>
+                <option>Cars24</option>
+              </optgroup>
+  
+              <optgroup label="Legal consultation">
+                <option>Shah Associate-Legal Service</option>
+                <option>Alka Shah Advocate</option>
+                <option>Jagdishwar Mishra</option>
+              </optgroup>
+  
+              <optgroup label="Radiology">
+                  <option>Om Radiology</option>
+                  <option>Oroscan</option>
+                  <option>Ravi Sono X-ray clinic</option>
+              </optgroup>
+  
+              <optgroup label="Event Manager">
+                  <option>Unicorm Events</option>
+                  <option>Divine Event</option>
+                  <option>Koncept Events</option>
+              </optgroup>
+  
+              <optgroup label="Restaurant dining booking">
+                  <option>Honest</option>
+                  <option>Rangoli</option>
+                  <option>Mango</option>
+              </optgroup>
+  
+              <optgroup label="Salon">
+                  <option>Fine hair art</option>
+                  <option>Bobby hair salon</option>
+                  <option>Teletop hair style</option>
+              </optgroup>
+            <!-- Add more office options as needed -->
+        </select>
+
+        <div class="form-group">
+            <label for="date">Old date</label>
+            <input type="date" id="date" name="old_date" min="today" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Old time</label>
+            <select id="section_time" name="old_time" required>
+             <option>10:00 AM</option>
+             <option>10:30 AM</option>
+             <option>11:00 AM</option>
+             <option>11:30 AM</option>
+             <option>12:00 PM</option>
+             <option>12:30 PM</option>
+             <option>02:00 PM</option>
+             <option>02:30 PM</option>
+             <option>03:00 PM</option>
+             <option>03:30 PM</option>
+             <option>04:00 PM</option>
+             <option>04:30 PM</option>
+             <option>05:00 PM</option>
+           </select>
+         </div>
+
+        </div>
+        </div>
+        <div  id="child2">
+    
+        <div id="new_data">
+
+        <div class="form-group">
+            <label for="date">New date</label>
+            <input type="date" id="date" name="new_date" min="today" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">New time</label>
+            <select id="section_time2"name="new_time" required>
+             <option>10:00 AM</option>
+             <option>10:30 AM</option>
+             <option>11:00 AM</option>
+             <option>11:30 AM</option>
+             <option>12:00 PM</option>
+             <option>12:30 PM</option>
+             <option>02:00 PM</option>
+             <option>02:30 PM</option>
+             <option>03:00 PM</option>
+             <option>03:30 PM</option>
+             <option>04:00 PM</option>
+             <option>04:30 PM</option>
+             <option>05:00 PM</option>
+           </select>
+         </div>
+
+         <button class="btn btn-primary" type="submit">Reschedule-Appointment</button>
+        </div>
+        </div>
+       
+    </div>
+   
+    </form>
+
+</center>
+<br>
+{% endblock %}

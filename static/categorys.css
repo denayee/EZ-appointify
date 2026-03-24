@@ -1,0 +1,138 @@
+div.gallery {
+    border: 1px solid black;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid blue;
+  }
+  
+  div.gallery img {
+    width: 60%;
+    height: auto;
+  }
+  
+  div.desc {
+    /* padding: 15px; */
+    text-align: center;
+    background-color: bisque;
+  }
+  
+  
+ 
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  
+  .child {
+    display: inline-block;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 2rem 2rem;
+    vertical-align: left;
+    height: 280px;
+    width: 100%;
+    margin: 20px;
+    background-color: transparent; 
+    /* background-color: #027b9a; */
+        font-family: 'Julius Sans One';
+font-style: normal;
+    
+    
+  }
+  /* #bod{
+    border: 5px solid rgb(0, 0, 0);
+  } */
+  
+  .parent2 {
+    /* border: 1px solid rgb(83, 83, 83); */
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    /* width: auto;
+    height: auto; */
+    height: auto;
+    width: auto;
+    
+  }
+
+
+
+
+  * {
+    box-sizing: border-box;
+  }  
+  
+  
+  .container01 {
+    padding: 64px;
+    border: 1px solid rgb(83, 83, 83);
+    margin: 10px;
+  }
+  
+  /* Clear floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .child1 {
+    /* display: inline-block; */
+    border: 1px solid rgb(83, 83, 83);
+    padding: 2rem 2rem;
+    /* vertical-align: left; */
+    
+    height: 380px;
+    width: 100%;
+    margin: 8px;
+    background-color: transparent; 
+    /* background-color: #027b9a; */
+    font-family: 'Julius Sans One';
+/* font-weight: inherit; */
+font-style: normal;
+
+  }
+  .thin{
+    font-weight: 100;
+  }
+  
+  .headofcat{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    /* border: 1px solid rgb(83, 83, 83); */
+  }

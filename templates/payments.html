@@ -1,0 +1,26 @@
+{% extends "admin_layout.html" %}
+
+{% block title %}
+    paymetns
+{% endblock %}
+    
+{% block main %}
+<br>
+<table class="table">
+
+    <tr>
+        <th><h1>ID</h1></th>
+        <th><h1>Owners</h1></th>
+    </tr>
+
+    {% for pay in pays %}
+    <tr>
+        {% for i in pay %}
+         <td>{{ i }}</td>
+        {% endfor %} 
+    </tr>
+    {% endfor %}
+
+</table>
+<br>
+{% endblock %}
